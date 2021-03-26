@@ -33,7 +33,7 @@ birth_year = current_date.year - calc_age
 print(f"OMG {name}, you are {age} years old, so you were born in {birth_year}")
 
 # Extra
-leap_count = 0 # temp
+leap_count = 0 # to calculate the days manually, taking into account leap days
 
 for i in range(birth_year, current_date.year + 1):
     if i % 400 == 0:
