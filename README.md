@@ -9,3 +9,4 @@
 - [Functional Calculator (OOP)](./week_1/functional_calculator.py)
 - [Loops and Lists](./week_1/loops_and_lists.py)
 - [Control Flow](./week_1/control_flow.py)
+- [Hero Story](./week_1/hero_story.py)
