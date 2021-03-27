@@ -60,4 +60,59 @@ print(f"OMG {name}, you are {age} years old, so you were born in {birth_year}")
 The text inside ``{these}`` are the names of the variables I want to print out. Notice that 'f' just before the string? That shows that this is a formatted string.  
 
 ## Restuarant Waiter Helper Programme
+(I will not be going over the whole programme. Only concepts not covered already will be looked into to avoid redundancy)  
+In Python, you create lists using square brackets ``[]``
+```python
+food_menu = ["chips", "steak", "baked beans", "bacon", "eggs", "ice cream", "curly fries"]
 
+menu_choices = [] # you can create empty lists too
+```
+
+To add items to a list, use the ``append()`` method.
+```python
+menu_choices.append(item) # item it the thing you're adding to the list
+```
+You can access an item from the list using its index. ``food_menu[0]`` would get "chips". You can also loop through each item in a list.
+```python
+def display_menu(menu):
+    # for displaying any list
+    for item in menu:
+        print(item)
+```
+The above function will take a list as an argument and print out each value on a new line.  
+
+Note that to declare a function in Python, you use the ``def`` keyword. The syntax to call it elsewhere is ``display_menu(menu_list)``. Functions are useful for reducing the amount of code a programmer need to write. In this example I knew that I would be printing multiple lists throughout the runtime of this programme. Without the function, I would need to repeat something similar to the following code every time I wanted to display a list to the user.
+```python
+for item in list_name:
+    print(item)
+```
+True, there's not much code there, but if I were to extend the programme I would have twice as many lines of code on my hands.
+
+## Holiday List
+Everything used in the holiday list programme has been covered in the previous section(s).
+
+## FizzBuzz (OOP)
+FizzBuzz is a classic programming problem that doesn't require most of what I've used to solve it. This task requires the implementation of OOP, hence the extra work.  
+
+A class in an object that has attributes (variables) and methods (functions/behaviours) associated with it. These classes can pass down those attributes and methods to other classes (called children or subclasses), but that functionallity won't be present in this example.  
+To declare a class in Python, use the keyword ``class``. This is similar to declaring functions, though there are a few differences.
+```python
+class FizzBuzz():
+
+    def __init__(self, fizz_value = 3, buzz_value = 5):
+        # by default, these values will be 3 and 5
+        self.fizz_value = fizz_value
+        self.buzz_value = buzz_value
+
+    # (truncated for space)
+```
+That ``__init__(self, ...)`` function is how to set up the class's attributes. To set up methods, you just declare them inside of the class (and make sure to include ``self`` in the perameters)
+```python
+  def run_fizzbuzz(self, n):
+
+        n = 100 # the number to get upto
+
+        for i in range(1, n + 1): # to make sure 1 to n is printed
+            if i % self.fizz_value == 0 and i % self.buzz_value == 0:
+                # (truncated for space)
+```
