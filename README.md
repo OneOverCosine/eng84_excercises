@@ -11,6 +11,9 @@
 - [Control Flow](./week_1/control_flow.py)
 - [Hero Story](./week_1/hero_story.py)  
 ---
+### [Week 2](.week_2)
+- [Naan Factory (TDD)](.week_2/test_naan_factory.py)
+---
 ## Date of Birth Calculator
 To define the variables ``age`` and ``name`` I could have done this at the beginning of the document and given them placeholder values.
 ```python
@@ -106,7 +109,7 @@ class FizzBuzz():
 
     # (truncated for space)
 ```
-That ``__init__(self, ...)`` function is how to set up the class's attributes. To set up methods, you just declare them inside of the class (and make sure to include ``self`` in the perameters)
+That ``__init__(self, ...)`` function is how to set up the class's attributes. To set up methods, you just declare them inside of the class as usual (and make sure to include ``self`` in the perameters)
 ```python
   def run_fizzbuzz(self, n):
 
@@ -116,3 +119,18 @@ That ``__init__(self, ...)`` function is how to set up the class's attributes. T
             if i % self.fizz_value == 0 and i % self.buzz_value == 0:
                 # (truncated for space)
 ```
+Loops have already been covered, but in this example the programme required printing from 1 to 100. To make this easier to edit/extend in the future I used a variable ``n`` to hold the number to count up to (in this case n = 100).  
+```python
+for i in range(1, n + 1): # to make sure 1 to n is printed
+            if i % self.fizz_value == 0 and i % self.buzz_value == 0:
+                print("FizzBuzz") # prints for multiples of 3 and 5 in this example
+            elif i % self.fizz_value == 0:
+                print("Fizz") # prints for multiples of 3 in this example
+            elif i % self.buzz_value == 0:
+                print("Buzz") # prints for multiples of 5 in this example
+            else:
+                print(i) # prints for all other values
+```
+In Python ``range(start, stop, step)`` goes from ``start`` to ``stop - 1``. By default, ``start`` is 0 and the ``step`` is 1.  
+
+Finally, to use the class (left off here)
