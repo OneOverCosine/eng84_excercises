@@ -1,26 +1,25 @@
-# task 08
-# create a method that takes one argument as a string (my name)
-# if the name == "Dunni" return true, else return false
+# task 15
+# create a dictionary called shopping_list with three key, value pairs
+# milk: £1; yogurht: £1.15; ice cream: £2.38
+# create a function that takes a dictionary as an argument
+# iterate through the values of shoppping_list and add the values
+# return the total cost
+shopping_list = {
+    "milk": 1,
+    "yogurht": 1.15,
+    "ice cream": 2.38
+}
 
-def is_dunni(name):
-    if name == "Dunni":
-        return True
-    else:
-        return False
+def calculate_total(shopping_list):
+    total = 0
+    for value in shopping_list.values():
+        total += value
+    return total
 
-print(is_dunni("Dunni"))
+print("The total of the items in the list: £{:.2f}".format(calculate_total(shopping_list)))
 
-# Task 09
-# create a class called Human with one function called breathe that returns "breathing"
-# create another class called Student that inherits from Human
-# create a Student object and call the function from the parent class
-
-class Human:
-    def breathe(self):
-        return "Breathing"
-
-class Student(Human):
-    pass
-
-student_object = Student()
-print(student_object.breathe())
+# task 16
+# create a dictionary called shopping_list with three key, value pairs
+# milk: £1; yogurht: £1.15; ice cream: £2.38
+# display the cost of yogurht
+print(shopping_list["yogurht"])
