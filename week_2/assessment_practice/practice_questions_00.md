@@ -48,16 +48,16 @@
 - create a function that takes a list as an argument
 - the function returns True if the datatype is a list and False otherwise
 
-## Task 12
+### Task 12
 - create a function called ``get_percentage`` that takes two integers as arguments
 - it should return the percentage of the two arguments
 
-# Task 13
+### Task 13
 - create a function that takes two arguments as integers
 - divide the first value by the second value and *return the outcome*
 - if the second value is 0, throw an error with a message stating that you can't divide by zero
 
-# Task 14
+### Task 14
 - write 5 odd numbers in a list
 - write 5 even numbers in another list
 - iterate through the lists to combine them and display the new list - write a function to do this
