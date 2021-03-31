@@ -16,7 +16,7 @@
 - change the value of the last index in the tuple
 
 ### Task 05
-- create a dictionary with two key,value pairs
+- create a dictionary with two key, value pairs
 - first key: name, value: James
 - second key: age: value: 18
 - display the values and the keys
