@@ -183,14 +183,14 @@ combine_and_display(odd_nums, even_nums)
 
 ### Task 15
 - create a dictionary called shopping_list with three key, value pairs
-- milk: £1; yogurht: £1.15; ice cream: £2.38
+- milk: £1; yoghurt: £1.15; ice cream: £2.38
 - create a function that takes a dictionary as an argument
 - iterate through the values of shoppping_list and add the values
 - return the total cost
 ```py
 shopping_list = {
     "milk": 1,
-    "yogurht": 1.15,
+    "yoghurt": 1.15,
     "ice cream": 2.38
 }
 
@@ -204,7 +204,7 @@ print("The total of the items in the list: £{:.2f}".format(calculate_total(shop
 ```
 
 ### Task 16
-- using the dictionary from the previous task, display the cost of yogurht
+- using the dictionary from the previous task, display the cost of yoghurt
 ```py
-print(shopping_list["yogurht"])
+print(shopping_list["yoghurt"])
 ```
