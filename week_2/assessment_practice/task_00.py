@@ -1,14 +1,12 @@
-#task 01
-# declare a funciton called 'greeting'
-# takes a string argument and returns the user's name (in a greeting message)
-def greeting(name): # task 01
-    return f"Hello {name}!"
+# task 05
+# create a dictionary with two key,value pairs
+# first key: name, value: James
+# second key: age: value: 18
+# display the values and the keys
 
-#task 02
-# declare a list of numbers from 0 - 9
-# iterate through it and print the list (slightly vague... print list as one or print each value?)
-num_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-for num in num_list:
-    print(num)
+person = {
+    "name": "James",
+    "age": 18
+}
 
 # run stuff here

@@ -12,7 +12,8 @@
 - [Hero Story](./week_1/hero_story.py)  
 ---
 ### [Week 2](.week_2)
-- [Naan Factory (TDD)](.week_2/test_naan_factory.py)
+- [Assessment Practice](./week_2/assessment_practice)
+- [Naan Factory (TDD)](./week_2/test_naan_factory.py)
 ---
 ## Date of Birth Calculator
 To define the variables ``age`` and ``name`` I could have done this at the beginning of the document and given them placeholder values.
