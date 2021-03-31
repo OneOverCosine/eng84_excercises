@@ -89,7 +89,7 @@ set_dec = {1, 2, 3, 4} # uses curly braces
 - create a method that takes one argument as a string (my name)
 - if the name == "Katalyst" return true, else return false
 ```py
-def is_dunni(name):
+def is_katalyst(name):
     if name == "Katalyst":
         return True
     else:
