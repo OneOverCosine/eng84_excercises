@@ -11,7 +11,7 @@
 - [Control Flow](./week_1/control_flow.py)
 - [Hero Story](./week_1/hero_story.py)  
 ---
-### [Week 2](.week_2)
+### [Week 2](./week_2)
 - [Assessment Practice](./week_2/assessment_practice)
 - [Naan Factory (TDD)](./week_2/test_naan_factory.py)
 ---
