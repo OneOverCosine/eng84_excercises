@@ -18,8 +18,8 @@ for num in num_list:
 ```
 
 ### Task 03
-- write the boolean operators
-- if "a" == "b" and "c" == "d", print True
+(My solution may be odd, as I missed the question)
+- using boolean operators, print True if two statements are true
 ```py
 if "a" == "b" and "c" == "d":
     print(True)
@@ -43,3 +43,71 @@ num_tuple = (num_list2)
 # value at any index.
 ```
 Lists are mutable, so you would be able to change that value.
+
+### Task 05
+- create a dictionary with two key,value pairs
+- first key: name, value: James
+- second key: age: value: 18
+- display the values and the keys
+```py
+person = {
+    "name": "James",
+    "age": 18
+}
+
+for key, value in person.items():
+    print(key, value)
+```
+
+### Task 06
+- create a class called Katalyst (my name)
+- initialise the class to take two arguments
+- create an object of that class
+- create another object of the same class called student
+- print the attributes
+```py
+class Katalyst:
+    def __init__(self, arg1, arg2):
+        self.arg1 = arg1
+        self.arg2 = arg2
+
+me = Katalyst("Cringe", "Katalyst")
+student = Katalyst("Ash", "Fall")
+
+print(me.arg1, me.arg2)
+print(student.arg1, student.arg2)
+```
+
+### Task 07
+- create a set with values from 1 to 4
+```py
+set_dec = {1, 2, 3, 4} # uses curly braces
+# unlike other collections, sets are unordered
+```
+
+### Task 08
+- create a method that takes one argument as a string (my name)
+- if the name == "Katalyst" return true, else return false
+```py
+def is_dunni(name):
+    if name == "Katalyst":
+        return True
+    else:
+        return False
+```
+
+### Task 09
+- create a class called Human with one function called breathe that returns "breathing"
+- create another class called Student that inherits from Human
+- create a Student object and call the function from the parent class
+```py
+class Human:
+    def breathe(self):
+        return "Breathing"
+
+class Student(Human):
+    pass
+
+student_object = Student()
+print(student_object.breathe())
+```
